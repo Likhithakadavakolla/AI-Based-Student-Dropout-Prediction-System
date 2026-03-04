@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Full Stack",
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "detail": "Start both backend (FastAPI) and frontend (React)",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "runOptions": {
+        "runOn": "default"
+      }
+    },
+    {
+      "label": "Start Backend Only",
+      "type": "npm",
+      "script": "backend",
+      "problemMatcher": [],
+      "detail": "Start FastAPI backend server",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start Frontend Only",
+      "type": "npm",
+      "script": "frontend",
+      "problemMatcher": [],
+      "detail": "Start React development server",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Install All Dependencies",
+      "type": "npm",
+      "script": "install",
+      "problemMatcher": [],
+      "detail": "Install root and frontend npm packages",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Complete Setup",
+      "type": "npm",
+      "script": "setup",
+      "problemMatcher": [],
+      "detail": "Full setup: create venv and install all dependencies",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}

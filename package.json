@@ -1,0 +1,19 @@
+{
+  "name": "dropout-prediction",
+  "version": "1.0.0",
+  "description": "AI-Based Student Dropout Prediction and Counseling System",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": ".venv\\Scripts\\python.exe -m uvicorn backend.app:app --reload --host 0.0.0.0 --port 8000",
+    "frontend": "cd frontend-react && npm start",
+    "postinstall": "cd frontend-react && npm install",
+    "setup": "npm install && python -m venv .venv && .venv\\Scripts\\python.exe -m pip install --upgrade pip && .venv\\Scripts\\python.exe -m pip install -r backend\\requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}\\backend",
+    "${workspaceFolder}"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/build": true
+  },
+  "npm.autoDetect": "on",
+  "npm.packageManager": "npm",
+  "extensions.ignoreRecommendations": false,
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "files.associations": {
+    "*.json": "jsonc"
+  }
+}
